@@ -24,11 +24,12 @@ class Galgje{
 		String geradenLetter = scanner.nextLine();
 		for(int j = 0 ; j < lengteWoord; j++) {
 			if( geheimWoord.charAt(j) == geradenLetter.charAt(0)  ) {
-				System.out.println(true);
+				System.out.print(geradenLetter + " ");
 			}else {
-				System.out.println(false);
+				System.out.print( "_ ");
 			}
 		}
+		System.out.println("");
 	}
 	void starten() {
 		woordInvoeren();
